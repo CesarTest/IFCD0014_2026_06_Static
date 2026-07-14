@@ -1,0 +1,40 @@
+a:link,
+.blog-entry-title a:hover {
+	color: #c17718;
+}
+
+a:visited {
+	font-weight: normal;
+	color: #89530e;
+}
+
+a:hover {
+	color:  #89530e;
+	text-decoration: underline;
+}
+
+#navcontainer {
+	background: url(../../images/metal/menu_bg.png) repeat-x;
+	font-weight: normal;
+}
+
+#navcontainer #current,
+#navcontainer .currentAncestor,
+#navcontainer a:hover {
+	background-image: url(../../images/metal/button_over.png);
+	font-weight: bold;
+}
+
+#navcontainer ul ul a {
+	text-shadow: none;
+	font-weight: normal;
+	color: black;
+}
+
+#navcontainer ul ul a:hover,
+#navcontainer ul ul #current,
+#navcontainer ul ul .currentAncestor {
+	background: repeat-x url(../../images/metal/submenu_over.png) center top;
+	text-shadow: none;
+	color: black;
+}

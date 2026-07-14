@@ -1,0 +1,477 @@
+/* @group General Styles */
+
+a.simple {
+	font-style: normal;
+	text-decoration: none;
+	font-size: 1.0em;
+	font-weight: inherit;	
+	color: #89530e
+}
+
+a.simple:hover {
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+a.simpleBig {
+	font-size: 1.3em;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: inherit;
+	color: #89530e
+}
+
+a.simpleBig:hover {
+	color: #89530e;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+p.first {
+	direction: ltr;
+	text-indent: 5%;
+	text-align: justify;
+	margin-left: 10%;
+	margin-right: 10%;
+	color: black;
+}
+
+p.firstGreen {
+	direction: ltr;
+	text-indent: 5%;
+	text-align: justify;
+	margin-left: 10%;
+	margin-right: 10%;
+	color: #062f03;
+}
+
+font.lista {
+	color: black;
+	line-height: normal;
+	font-weight: bold
+}
+
+font.trabajo {
+
+}
+
+font.profile {
+	font-size: 1.5em;
+	color: black;
+}
+
+code {
+	font-family:"Courier New",Courier;
+}
+
+img.companyIcon {
+	float: right;
+}
+
+/* @end */
+
+/* @group Titles */
+#title {
+	margin-top: 0.5em;
+	margin-left: 1.0em;
+	width : 100%;
+	height: 100%;
+	font-size: 1.2em;
+	font-family: Verdana, Arial, "Lucida Grande", Lucida, sans-serif;
+	text-align: justify;
+}
+
+#title h1.blackT {color: black;}
+#title h1.brownT {color: #89530e;}
+#title h1.greenT {color: #062f03;}
+
+#title h1 {
+	text-align: center;
+	font-style: normal;
+}
+
+#title font.capital {
+    font-size: 3.0em;
+    font-weight: bold;
+    font-family: "Verdana";
+}
+
+#title font.capitalSpace {
+    font-size: 3.0em;
+    font-weight: bold;
+    font-family: "Verdana";
+    letter-spacing: -0.15em;
+}
+
+
+#title font.capital2 {
+    font-family: "Verdana";
+    font-weight: bold;
+}
+
+/* @end */
+
+
+/* @group Index General Styles */
+
+#index {
+	width : 70%;
+	background-color: #fdf5e6;
+	margin-left: 16%;
+}
+
+#index a {
+	font-size: 1.8em;
+	font-variant: small-caps;
+	font-weight: normal;
+	letter-spacing: 0.3em;
+}
+
+#index a:hover {
+	border-bottom: solid;
+	text-decoration: none;
+}
+#index a.menuBlack {color:black;}
+#index a.submenuBlack {
+	margin: 0;
+	border-bottom: none;
+	text-decoration: none;
+	font-size: 1.4em;
+	letter-spacing: 0.2em;
+	color:black;
+}
+
+#index a.menuGreen {color: #062f03;}
+#index a.submenuGreen {
+	margin: 0;
+	border-bottom: none;
+	text-decoration: none;
+	font-size: 1.4em;
+	letter-spacing: 0.2em;
+	color: #062f03;
+}
+
+#index ul.blackC {color: black;}
+#index ul.greenC {color: #062f03;}
+#index li {padding-bottom: 1.0em;}
+
+#introduction {
+	margin-top: 0.5em;
+	margin-left: 1.0em;
+	width : 100%;
+	height: 100%;
+	font-size: 1.2em;
+	font-family: Verdana, Arial;
+	text-align: justify;
+}
+
+#introduction h1 {
+	text-align: center;
+	font-family: Verdana, "Lucida Grande", Lucida, sans-serif;
+	font-style: normal;
+}
+
+#introduction font.capital {
+    font-size: 3.0em;
+    font-weight: bold;
+    font-family: "Verdana";
+    letter-spacing: -0.15em;
+}
+
+#introduction font.capital2 {
+    font-family: "Verdana";
+    font-weight: bold;
+}
+
+#introduction font.capitalNoSpace {
+    font-size: 3.0em;
+    font-weight: bold;
+    font-family: "Verdana";
+}
+
+#introduction p.first {
+	text-indent: 15.0em;
+	text-align: left;
+	padding-left: 1.0em;
+	direction: ltr;
+	text-align: justify;
+}
+
+/* @end */
+
+
+/* @group Time Machine */
+
+#myGallery {
+	width: 100%;
+	height: 650px;
+}
+#myGallery img {
+	border: 2px solid #52697E;
+}
+
+
+/* @end */
+
+/* @group Tabs */
+
+.navigationTabs {
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 1px solid #ffdf7f;
+	font-size: 1.0em;
+	list-style: none
+}
+.navigationTabs li {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	padding-right: 3px;
+	list-style: none
+}
+.navigationTabs li a{
+	float: left;
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 10px;
+	overflow: hidden;
+	color: #7c661e;
+	background-color: #ffdf7f;
+	position: relative;
+	text-decoration: none;
+	font-size: 1.7em;
+	list-style: none
+}
+.navigationTabs li a:hover {
+	background-color: #ffdf7f;
+	list-style: none;
+}
+.navigationTabs li a.active {
+	background-color: white;
+	border: thin solid #ffdf7f;
+	list-style: none
+}
+.tabsContent {
+	
+}
+.tab {
+	padding: 5%;
+	display: none;
+	font-family: Verdana,Arial,"Lucida Grande", Lucida, sans-serif;
+}
+.tab h2 {
+	font-weight: bold;
+	font-size: 4.0em;
+	text-align: center;
+	color: #89530e;
+}
+.tab h3 {
+	font-weight: bold;
+	font-size: 1.3em;
+	margin-top: 20px;
+}
+
+.tab ul {
+	margin-top: 16px;
+	list-style: none;
+}
+.tab li {
+	list-style: none;
+}
+.tab a {
+	color: #8FB0CF;
+
+}
+.tab strong {
+	font-weight: bold;
+}
+
+.tab p {
+	 font-size: 1.6em;
+}
+
+/* @end */
+
+/* @group Slider */
+
+#slider {
+    width: 100%;  
+    height: 100%;  
+    position: relative; /* important */
+	overflow: hidden;
+}
+/* @end */
+
+
+/* @group Tables */
+
+
+/* Index Table*/
+table.indexTable{
+	background-color: #fdf5e6; 
+	width: 100%;
+}
+
+td.indexName {
+    background-color: #ffdf7f;
+	border: medium solid #ffdf7f;
+	text-align: center;
+}
+
+td.indexIcon {
+	border: medium solid #ffdf7f;
+	text-align: center;
+}
+
+/* Career Table*/
+table.jobs {
+  border-style: none; 
+  width:99%;
+}
+
+td.header { 
+  background-color: #ffdf7f;
+  padding: 0.8em;
+  vertical-align: top;
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: none;
+  text-align: left; 
+  width:10%;
+  color:black
+}
+
+td.contents {  
+  padding: 0.8em;
+  color:#000000;
+  text-align: justify;
+  vertical-align: top;
+  border-left: none;
+  background-color: #fdf5e6; 
+}
+
+/* Studies Table*/
+table.study {
+  background-color: #fdf5e6; 
+  border-style: none; 
+  width:100%;
+}
+
+td.studyHeader{
+  background-color: #ffdf7f;
+  vertical-align: middle;
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: none;
+  text-align: left; 
+  width:10%;
+  color:black
+}
+
+td.studyTitle {
+  padding: 0.3em 0.2em 0.2em 0.5em;
+  border-style: none;
+  width:10%;
+  text-decoration: underline;
+}
+
+td.studyContent {
+  padding: 0.3em 0.2em 0.2em 0.5em;
+  border-style: none; 
+  width:90%	
+}
+
+/* Control Buttons Table */
+table.controlButtons {
+	margin-left:  250px;
+	border-style: inset;
+}
+
+
+/* @end */
+
+/* @group List */
+
+/* Lists */
+
+ul.tasks {
+	font: 0.85em;
+	list-style-position: inside;
+	width: 95%;
+	opacity: 1;
+	text-align: justify;
+	padding: 0;
+}
+
+ul.properties {
+	padding-top: 0.8em;
+	width: 85%;
+	list-style-position: inside;
+	opacity: 1;
+	position: relative;
+	left: 5%
+}
+
+/* Bullets */
+li.circle {
+	list-style-type: circle;
+	padding: 0.4em;
+}
+
+li.square {
+	list-style-type: square;
+	list-style-position: inside;
+	padding-bottom: 0.7em;
+}
+
+li.noBullet {
+	list-style: none;	
+}
+
+/* @end */
+
+/* @group Quotes */
+
+blockquote {
+    display: block;
+    font-size: 1.2em;
+    background: transparent none repeat scroll 0 50%;
+    width: auto;
+    font-style: italic;
+    margin: 15px 0;
+    padding: 0 20px;
+    border: 0 none;
+    line-height: 150%;
+}
+
+blockquote.cita {
+   width: 92%;
+   background: url('./images/quote-close.png') no-repeat right bottom;
+}
+
+blockquote.cita p {
+   background-image: url('./images/quote-open.png') !important;
+   background-repeat: no-repeat;
+   background-position: left top;
+   padding-left: 56px;
+   text-indent: -58px;   
+}
+
+blockquote.cita p:first-letter {
+   padding-left: 40px;
+   font-size: 1.5em;
+   font-style: italic;
+   font-family: "Georgia", "Times New Roman", "Times", "serif";
+   font-weight: bold;
+}
+
+p.signature {
+    text-align: right;
+    font-size: 1.0em;    
+    font-style: italic;
+    margin-top: -10px;   
+}
+/* @end */

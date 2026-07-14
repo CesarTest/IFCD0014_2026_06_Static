@@ -1,0 +1,228 @@
+/* @group Toolbar */
+
+/* Download PDF */
+#pdf {
+	text-align:right;
+}
+
+/* Collapse - Expand Options */
+#options {
+	width:100%; 
+	text-align:right;
+	color: #033
+}
+#options a {
+	color: #89530e;
+	text-decoration:none; 
+	color: black
+}
+
+#options a:hover {
+	color:#ffdf7f
+}
+
+/* @end */
+
+/* @group Accordion Container */
+
+#acc {
+	width:99%;
+	color: #033;
+	font-weight: bold;
+	list-style: none; 
+	border-bottom-style: none;
+	border-top:none;
+	padding-top: 1px;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+/* Header */
+#acc h3 {
+	width:99%;
+	padding:6px 6px 8px;
+	color: black;
+	font-weight: bold;
+	font-size: 1.5em;
+	font-variant: small-caps;
+	letter-spacing:0.3em;
+	background-color: white;
+	border-bottom-style: none;
+	border-top-style: none;
+	border-top:none; 
+	cursor:pointer;
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+	list-style:none; 
+	border-color: black;
+	border-style: ridge;
+}
+
+#acc h3:hover {
+	width:99%;
+	padding:6px 6px 8px;
+	background-color: #fdf5e6;
+	font-weight: bold;
+	list-style:none; 
+}
+
+/* Container */
+#acc .acc-section {
+	overflow:hidden; 
+	padding:0;
+	background:#fff;
+	font-weight: normal;
+	margin-left: 2%;
+	margin-right: 2%;		
+	font-style: normal
+}
+
+#acc .acc-content {
+	width:99%; 
+	border-top:none; 
+	background:#fff;
+	font-weight: normal;
+	font-style: normal
+}
+
+#acc .acc-selected {
+	width:99%; 
+	border-top:none; 
+	background:white;
+	font-weight: normal;
+	font-style: normal;
+	color: black
+}
+
+#career .noBullet {
+	list-style-type: none;
+	padding-bottom: 1.0em;
+}
+
+/* @end */
+
+/* @group Career Particulars */
+
+#career {
+	width:98%;
+	font-weight: bold;
+	font-style: normal;	
+	background:#fff;
+	background-image: none;
+	font-variant: normal;
+}
+
+/* Header */
+#career h3 { 
+	width:98%;
+	font-size: 1.1em; 
+	padding: 0;
+	background:#fff;
+	cursor:pointer;
+	color:  black;
+	letter-spacing:normal;
+	font-style: normal; 
+	border-bottom: thin solid black;
+	font-variant: normal;
+	border-bottom-color: black;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+#career h3:hover { 
+	width:98%;
+	font-size: 1.4em; 
+	color:  black;
+	font-style: normal; 
+	background: none;
+	border-bottom: thin solid black
+}
+
+/* Container*/
+#career .acc-selected {
+	font-size: 1.4em; 
+	font-weight: bold;
+	font-style: normal;
+	color: black;
+	border-bottom: thin solid black
+}
+#career .acc-section {
+	width:98%;
+	overflow:hidden; 
+	background-color:#fff;
+	font-weight: normal;
+	font-style: normal;
+}
+#career .acc-content {
+	width:98%;
+	background:#fff;
+	margin:5px auto;
+	font-weight: normal;
+	font-style: normal;
+	border-top: none
+}
+
+
+/* @end */
+
+/* @group Studies Particulars */
+
+#studies {
+	width:98%;
+	color:#033;
+	font-weight: bold;
+	font-style: normal;	
+	background:#fff;
+	background-image: none;
+	margin: 0;
+	padding: 0;
+	word-spacing: normal
+}
+
+/* Header */
+
+#studies h3 {  
+	width:98%;
+	font-style: normal;	
+	margin: 0;
+	padding: 0;
+	background:#fff; 
+	cursor:pointer;
+	color:  black;
+	border-bottom: thin solid black
+}
+#studies h3:hover { 
+	width:98%;
+	background:#fff;
+	font-style: normal; 
+	margin: 0;
+	padding: 0;
+	border-bottom: thin solid black
+}
+
+/* Container */
+#studies .acc-section {
+	width:98%;
+	overflow:hidden; 
+	background-color:#fff;
+	font-weight: normal;
+	font-style: normal;
+	
+}
+#studies .acc-content {
+	width:98%;
+	background:#fff;
+	margin:5px auto;
+	font-weight: normal;
+	font-style: normal;
+	border-top: none
+}
+#studies .acc-selected {
+	width:98%;
+	font-weight: bold;
+	font-style: normal;
+	color: black;
+	border-bottom: thin solid black
+}
+
+/* @end */

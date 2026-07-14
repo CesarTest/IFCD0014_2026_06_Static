@@ -1,0 +1,380 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content=
+"text/html; charset=utf-8" />
+<meta name="robots" content="all" />
+<meta name="google-site-verification" content="XrIe_0r2FNn2buC2LLDhRkhx3CokC0oqEgJicZ3o2fs" />
+<link rel="icon" href="http://cesar-delgado.info/favicon.ico" type=
+"image/x-icon" />
+<link rel="shortcut icon" href=
+"http://cesar-delgado.info/favicon.ico" type="image/x-icon" />
+<title>Test Definition Scripting Language</title>
+<link rel="stylesheet" type="text/css" media="screen" href=
+"../rw_common/themes/aqualicious_cesar/styles.css" />
+<link rel="stylesheet" type="text/css" media="print" href=
+"../rw_common/themes/aqualicious_cesar/print.css" />
+<link rel="stylesheet" type="text/css" media="handheld" href=
+"../rw_common/themes/aqualicious_cesar/handheld.css" />
+<link rel="stylesheet" type="text/css" media="screen" href=
+"../rw_common/themes/aqualicious_cesar/css/styles/metal.css" />
+<link rel="stylesheet" type="text/css" media="screen" href=
+"../rw_common/themes/aqualicious_cesar/css/sidebar/sidebar_hide.css" />
+<link rel="stylesheet" type="text/css" media="screen" href=
+"../rw_common/themes/aqualicious_cesar/css/font/modern.css" />
+<link rel="stylesheet" type="text/css" media="screen" href=
+"../rw_common/themes/aqualicious_cesar/css/background/darkgradient.css" />
+<link rel="stylesheet" type="text/css" media="screen" href=
+"../rw_common/themes/aqualicious_cesar/css/width/variable.css" />
+<link rel="stylesheet" type="text/css" media="screen" href=
+"../rw_common/themes/aqualicious_cesar/accordion.css" />
+<link rel="stylesheet" type="text/css" media="screen" href=
+"../rw_common/themes/aqualicious_cesar/custom.css" />
+<link rel="stylesheet" type="text/css" media="screen" href=
+"../rw_common/themes/aqualicious_cesar/spacegallery.css" />
+<script type="text/javascript" src=
+"../rw_common/themes/aqualicious_cesar/javascript.js">
+</script>
+<script type="text/javascript">
+//<![CDATA[
+                         <!-- Original:  Mike Canonigo (mike@canonigo.com) -->
+<!-- Web Site:  http://www.munkeehead.com -->
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+<!-- Begin
+NewImg = new Array (
+"bash_assets/Config1.jpg",
+"bash_assets/Config2.jpg",
+"bash_assets/Config3.jpg"
+);
+var ImgNum = 0;
+var ImgLength = NewImg.length - 1;
+
+//Time delay between Slides in milliseconds
+var delay = 3000;
+
+var lock = false;
+var run;
+function chgImg(direction) {
+if (document.images) {
+ImgNum = ImgNum + direction;
+if (ImgNum > ImgLength) {
+ImgNum = 0;
+}
+if (ImgNum < 0) {
+ImgNum = ImgLength;
+}
+document.slideshow.src = NewImg[ImgNum];
+   }
+}
+function auto() {
+if (lock == true) {
+lock = false;
+window.clearInterval(run);
+}
+else if (lock == false) {
+lock = true;
+run = setInterval("chgImg(1)", delay);
+   }
+}
+//  End --> 
+//]]>
+</script>
+</head>
+<body>
+<div id="gradient"></div>
+<div id="navcontainer"><!-- Start Navigation -->
+<ul>
+<li><a href="../index.html" rel="self">Home</a></li>
+<li><a href="../works/examples.html" rel="self" class=
+"currentAncestor">Results</a>
+<ul>
+<li><a href="bash.html" rel="self" id="current" name="current">Testing
+Framework</a></li>
+<li><a href="../works/./http.html" rel="self">Java Web
+Server</a></li>
+<li><a href="../works/./matlab.html" rel="self">Matlab Works</a></li>
+<li><a href="../works/./others.html" rel="self">Others</a></li>
+</ul>
+</li>
+<li><a href=".././webdesign.html" rel="self">WordPress</a></li>
+<li><a href="../cv/contact.php" rel="self">Contact</a></li>
+<li><a href="../works/news.html" rel="self">News</a></li>
+</ul>
+</div>
+<!-- End navigation -->
+<div id="container"><!-- Start container -->
+<div id="pageHeader"><!-- Start page header -->
+<h1><a href="http://cesar-delgado.info">César Delgado</a></h1>
+</div>
+<!-- End page header -->
+<div id="orangeLine">Welcome</div>
+<div id="sidebarContainer"><!-- Start Sidebar wrapper -->
+<div id="sidebar"><!-- Start sidebar content -->
+<h1 class="sideHeader"></h1>
+<!-- Sidebar header -->
+<br />
+<!-- sidebar content you enter in the page inspector -->
+ <!-- sidebar content such as the blog archive links --></div>
+<!-- End sidebar content --></div>
+<!-- End sidebar wrapper -->
+<div id="contentContainer"><!-- Start main content wrapper -->
+<div id="content"><!-- Start content -->
+<div class="contentSpacer"></div>
+<!-- this makes sure the content is long enough for the design -->
+<script src="bash_assets/jquery.js" type="text/javascript">
+</script> <script src="bash_assets/eye.js" type="text/javascript">
+</script> <script src="bash_assets/utils.js" type=
+"text/javascript">
+</script> <script src="bash_assets/spacegallery.js" type=
+"text/javascript">
+</script> <script src="bash_assets/layout.js" type=
+"text/javascript">
+</script>
+<div id="title">
+<h1 class="greenT"><font class="capital">T</font>esting Framework<font class="capital">!</font></h1>
+</div>
+<div class="wrapper">
+<ul class="navigationTabs">
+<li><a href="#GOALS" rel="goals">Goals</a></li>
+<li><a href="#OVERVIEW" rel="overview">Overview</a></li>
+<li><a href="#CONFIGURATION" rel=
+"configuration">Configuration</a></li>
+<li><a href="#REQUIREMENTS" rel=
+"requirements">Requirements</a></li>
+</ul>
+</div>
+<div class="tabsContent">
+<div class="tab">
+<h2>GOALS</h2>
+<table class="jobs">
+<tr>
+<td class="header" style="vertical-align: middle;">Goals:</td>
+<td class="contents">
+<ul class="tasks">
+<li class="square"><font class="lista">HP Test Director Scripting
+Implementation</font>: HP Quality Center tool offers a very limited
+scripting language for test definition and launching. It was
+required to implement a more powerful scripting language than the
+HP one for our testing needs.</li>
+<li class="square"><font class="lista">Easy user interface</font>:
+through excel pages with predefined elements. This can only be
+achieved due to inherited contexts and proper configuration files
+layout (based on profiles, that can be easily exchanged). <a class=
+"simple" style="color:#89530e" href="bash_assets/excel.xls">Here an
+excel example</a>. See the overview for more detail.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="header" style="vertical-align: middle;">Key
+concepts:</td>
+<td class="contents">
+<ul class="tasks">
+<li class="square"><font class="lista">Service Performance
+Evaluation</font>: being able to code most of the tasks required
+for service preparation and evaluation, which means collect all
+processes log files from all machines and summarize into a
+stadistics output file.</li>
+<li class="square"><font class="lista">Easy to move to different
+environments</font>: different labs, databases values, etc.</li>
+<li class="square"><font class="lista">Different levels of details
+when executing</font>: being able to launch a stage, unit or suite.
+Easier for debugging.</li>
+<li class="square"><font class="lista">Different levels of details
+on results</font>: service summary and stadistics.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="header" style="vertical-align: middle;">Advantages:</td>
+<td class="contents">
+<ul class="tasks">
+<li class="square"><font class="lista">Few Requirements:</font>
+since bash based, it will work in almost any Unix machine (MAC OS,
+Linux, Solaris already tested)</li>
+<li class="square"><font class="lista">Simple:</font> the scripting
+is really easy to understand, so, easy to maintain, adapt and
+improve.</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>OVERVIEW</h2>
+<div id="myGallery" class="spacegallery"><img src=
+"bash_assets/Overview7.jpg" alt="" /> <img src=
+"bash_assets/Overview6.jpg" alt="" /> <img src=
+"bash_assets/Overview5.jpg" alt="" /> <img src=
+"bash_assets/Overview4.jpg" alt="" /> <img src=
+"bash_assets/Overview3.jpg" alt="" /> <img src=
+"bash_assets/Overview2.jpg" alt="" /> <img src=
+"bash_assets/Overview1.jpg" alt="" /></div>
+<table class="jobs">
+<tr>
+<td class="header" style="vertical-align: middle;">
+Definitions:</td>
+<td class="contents">
+<ul class="tasks">
+<li class="square"><font class="lista">Group of machines:</font>
+list of machines that run same processes (so, same logs to
+collect).</li>
+<li class="square"><font class="lista">Service:</font> collection
+of processes distributed along several groups of machines.</li>
+<li class="square"><font class="lista">Execution Unit:</font>
+sequence of instructions, grouped into stages, for stadistics
+extraction of a service.</li>
+<li class="square"><font class="lista">Execution Set:</font>
+sequence of execution units.</li>
+<li class="square"><font class="lista">Instruction:</font> task to
+accomplish over a machine, group of machines or service. Three
+types of instructions available: task, filtering and messages.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="header" style="vertical-align: middle;">Examples:</td>
+<td class="contents">
+<ul class="tasks">
+<li class="square"><font class="lista"><a class="simple" style=
+"color:#89530e" href="bash_assets/callSummary.htm">Summary Log</a>
+Example:</font> first stage filtering result.</li>
+<li class="square"><font class="lista"><a class="simple" style=
+"color:#89530e" href="bash_assets/callStadistics.htm">Stadistics
+File</a> Example:</font> this file collects the stadistics of
+several execution units, this way one can see them at once.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="header" style="vertical-align: middle;">Future
+Versions:</td>
+<td class="contents">
+<ul class="tasks">
+<li class="square"><font class="lista">Automatic Evaluation</font>:
+based on the resulting stadistics.</li>
+<li class="square"><font class="lista">Free levels of detail in
+results</font>: set up all levels of details on the filtering system for better traces.</li>
+<li class="square"><font class="lista">Implement different text filters types</font>: with three or four types of filters all kinds of stadistics can be obtained. A matter of setting filtering parameters in three or four ways.</li>
+<li class="square"><font class="lista">Tasks in parallel over
+machines</font>: extend the very same idea currently used for
+instructions over groups of machines, instead of sequently go
+machine per machine executing each task.</li>
+<li class="square"><font class="lista">XML test definition</font>: Excel is an easy GUI to define a XML like structure. Having a good XML GUI, that allows similar highlighting and something one can directly work at (avoiding extra tasks for automatization, directly work on test definition), would be better in order to decouple the GUI from plain definition.</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>CONFIGURATION</h2>
+<div id="slider">
+<table class="controlButtons">
+<tr>
+<td align="right"><a href="javascript:chgImg(-1)"><img src=
+"bash_assets/back.png" alt="Previous" /></a></td>
+<td align="center"><a href="javascript:auto()"><img src=
+"bash_assets/play.png" alt="Auto/Stop" /></a></td>
+<td align="left"><a href="javascript:chgImg(1)"><img src=
+"bash_assets/next.png" alt="Next" /></a></td>
+</tr>
+</table>
+<img src="bash_assets/Config1.jpg" name="slideshow" id=
+"slideshow" /></div>
+<table class="jobs">
+<tr>
+<td class="header" style="vertical-align: middle;">Examples:</td>
+<td class="contents">
+<ul class="tasks">
+<li class="square"><font class="lista">Excel Example:</font> here
+you can see how a service is managed. <a class="simple" style=
+"color:#89530e" href="bash_assets/excel.htm">HTML ,</a> <a class=
+"simple" style="color:#89530e" href=
+"bash_assets/excel.xls">XLS</a></li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>REQUIREMENTS</h2>
+<table class="jobs">
+<tr>
+<td class="header" style="vertical-align: middle;">Shooting
+Machine:</td>
+<td class="contents">
+<ul class="tasks">
+<li class="square"><font class="lista">Bash:</font> system is bash
+written.</li>
+<li class="square"><font class="lista">AWK:</font> for logs
+filtering.</li>
+<li class="square"><font class="lista">SSH Client:</font> for
+remote scripts, scp, sftp.</li>
+<li class="square"><font class="lista">Expect:</font> for
+interactions with remote machines (passwords,etc.) and
+timeouts.</li>
+<li class="square"><font class="lista">Java:</font> optionally for
+Excel To Bash conversion (but very desirable).</li>
+<li class="square"><font class="lista">SQL Client:</font> for
+database queries. Currently supports only Oracle sqlplus.</li>
+<li class="square"><font class="lista">Perl:</font> for certain
+simple commands, as random number generation.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="header" style="vertical-align: middle;">Remote
+Machines:</td>
+<td class="contents">
+<ul class="tasks">
+<li class="square"><font class="lista">Bash:</font> system is bash
+written.</li>
+<li class="square"><font class="lista">SSH Server:</font> for
+remote scripts, scp, sftp.</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="clear"></div>
+<div class="clearer"></div>
+</div>
+<!-- End content --></div>
+<!-- End main content wrapper -->
+<div class="clearer"></div>
+<div id="footer"><!-- Start Footer -->
+<div id="breadcrumbcontainer">
+<!-- Start the breadcrumb wrapper --></div>
+<!-- End breadcrumb -->
+		  <p>
+		 <a href="http://es.scribd.com/CesarElectronic/collections" title="Scribd - Collections" rel="nofollow" target="_blank"><img src="../assets/scribd_icon.png" height="75px" alt="Scribd" /></a>
+		 <a href="http://www.mathworks.com/matlabcentral/fileexchange/authors/13983" title="Matlab Works" rel="nofollow" target="_blank"><img src="../assets/MATLAB.png" width="88px" alt="Matlab" /></a>
+		 </p>
+		 <p>Browsers: IE7 won't render fine, due to IE image processing bug. Please use IE8, Opera 9+, Firefox 3+ or Chrome.</p>
+
+
+</div>
+<!-- End Footer -->
+<!-- End container -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20286011-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
